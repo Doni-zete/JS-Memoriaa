@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da memoria</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="src/style/modal.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>CRIPTO DA MEMÓRIA</h2>
+        <div class="game"></div>
+        <div id="timer">Tempo: <span id="time">0</span> segundos</div>
+        <button class="reset" onclick="window.location.reload()">
+            RESETAR JOGO</button>
+    </div>
+
+
+    <div id="victoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p class="modal-text">Parabéns! Você concluiu o jogo em <span id="victoryTime">0</span> segundos!</p>
+        </div>
+    </div>
+
+    <script src="./src/script/script.js"></script>
+    <script src="src/script/modal.js"></script>
+</body>
+
+</html>
